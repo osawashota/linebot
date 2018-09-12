@@ -14,7 +14,7 @@ app.get("/", function(req, res, next){ //追加
 app.get("/hello", function(req, res, next){
   var message = 'こんにちは'; //追加
   message = getMessageText(req.query.text);
-  res.json(message); //'こんばんは'をmessageに書き換え
+  res.json(message + '!!!!!'); //'こんばんは'をmessageに書き換え
 });
 
 //今後LINEに接続するときに使います
