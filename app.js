@@ -8,7 +8,7 @@ app.set('view engine', 'ejs');
 var server = app.listen(process.env.PORT || 5000);
 
 app.get("/", function(req, res, next){ //追加
-  res.render('index.ejs', {text: 'こんにちは!'}); //追加
+  res.render('index.ejs', {text: 'こんにちは!!'}); //追加
 }); //追加
 
 app.get("/hello", function(req, res, next){
