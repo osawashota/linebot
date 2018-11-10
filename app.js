@@ -57,20 +57,33 @@ function getMessageText(text) {
     message = '8:00 ~ 19:00';
   }else if(text.match(/定休日/)){
     message = '毎月第二月曜日と第三月曜日';
+
+    return message;
+
+    var price = 0;
+    if(text.match(/カット/)){
+      price += 1000;
+    }
+    if(text.match(/パーマ/)){
+      price += 2000;
+    }
+    message = "価格は" + price + "円です。";
+    return message;
+
   } else {
     message = '?????????????';
   }
   return message;
 
-  var price = 0;
-  if(text.match(/カット/)){
-    price += 1000;
-  }
-  if(text.match(/パーマ/)){
-    price += 2000;
-  }
-  message = "価格は" + price + "円です。";
-  return message;
+  // var price = 0;
+  // if(text.match(/カット/)){
+  //   price += 1000;
+  // }
+  // if(text.match(/パーマ/)){
+  //   price += 2000;
+  // }
+  // message = "価格は" + price + "円です。";
+  // return message;
 
 
 // function getmassageText(text){
