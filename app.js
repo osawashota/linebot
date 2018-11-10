@@ -54,44 +54,56 @@ function getMessageText(text) {
   }else if(text.match(/こんにちは/)){
     message = 'こんにちは'
   }else
-    message = '?????????????';
-  }
+  message = '?????????????';
+}
+
+if(text.match(/営業時間/)){
+  message = '8:00 ~ 19:00';
+}
+if(text.match(/定休日/)){
+  message = '毎月第二月曜日と第三月曜日';
+
   return message;
 }
-if(text.match(/学校の地図|学校の場所/)) {
-  return client.replyMessage(event.replyToken, {
-    type: 'location',
-    "title": "福島県立小高産業技術高校",
-    "address": "〒979-2157 福島県南相馬市小高区吉名玉ノ木平７８",
-    "latitude": 37.5580927,
-    "longitude": 140.9796601
-}
-if(text.match(/営業時間/)){
-  massage = '8:00 ~ 19:00';
-
-}
-
-if(text.match(/定休日/)){
-  massage = '毎月第二月曜日と第三月曜日';
-
-}
-
-
-
-
-
-
-//コースごとの金額
-function getMessageText(text){
-  if(text.match(/料金|費用|価格|かかるお金|金額/)){
-    massage = '性別（男、女）、メニュー（カット、パーマ、カラー、矯正縮毛、トリートメント）、オプションの有無を一言ずつ入力してください。'
-    }
-
-  )
-
-    }
-  }
-if(text.match())
-
-
-  '
+// function getmassageText(text){
+//   if(text.match(/学校の地図|学校の場所/)) {
+//     return client.replyMessage(event.replyToken, {
+//       type: 'location',
+//       "title": "福島県立小高産業技術高校",
+//       "address": "〒979-2157 福島県南相馬市小高区吉名玉ノ木平７８",
+//       "latitude": 37.5580927,
+//       "longitude": 140.9796601
+//     }
+//   }
+//   function getmassageText(text){
+//     if(text.match(/営業時間/)){
+//       message = '8:00 ~ 19:00';
+//     }
+//   }
+//
+//   function getmassageText(text){
+//     if(text.match(/定休日/)){
+//       msssage = '毎月第二月曜日と第三月曜日';
+//
+//     }
+//   }
+//
+//
+//
+//
+//
+//
+//   //コースごとの金額
+//   function getMessageText(text){
+//     if(text.match(/料金|費用|価格|かかるお金|金額/)){
+//       massage = '性別（男、女）、メニュー（カット、パーマ、カラー、矯正縮毛、トリートメント）、オプションの有無を一言ずつ入力してください。'
+//     }
+//
+//   )
+//
+// }
+// }
+// if(text.match())
+//
+//
+// '
