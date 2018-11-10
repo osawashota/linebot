@@ -61,7 +61,8 @@ function getMessageText(text) {
     message = '?????????????';
   }
   return message;
- ver price = 0;
+  
+ var price = 0;
  if(text.match(/カット/)){
    price += 1000;
  }
