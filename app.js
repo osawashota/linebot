@@ -53,16 +53,13 @@ function getMessageText(text) {
     message = 'おはよう';
   }else if(text.match(/こんにちは/)){
     message = 'こんにちは'
-  }else
-  message = '?????????????';
-}
-
-if(text.match(/営業時間/)){
-  message = '8:00 ~ 19:00';
-}
-if(text.match(/定休日/)){
-  message = '毎月第二月曜日と第三月曜日';
-
+  }else if(text.match(/営業時間/)){
+    message = '8:00 ~ 19:00';
+  }else if(text.match(/定休日/)){
+    message = '毎月第二月曜日と第三月曜日';
+  } else {
+    message = '?????????????';
+  }
   return message;
 }
 // function getmassageText(text){
