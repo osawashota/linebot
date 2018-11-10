@@ -61,7 +61,7 @@ function getMessageText(text) {
     // return message;
 
     var mensPrice = 0;
-    var womensPrice = 0+
+    var womensPrice = 0;
     if(text.match(/カット/)){
       mensPrice += 1000;
       womensPrise += 1000;
