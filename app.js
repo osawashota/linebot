@@ -61,13 +61,23 @@ function getMessageText(text) {
     message = '?????????????';
   }
   return message;
-}
+ ver price = 0;
+ if(text.match(/カット/)){
+   price += 1000;
+ }
+ if(text.match(/パーマ/)){
+   price += 2000;
+ }
+ message = "価格は" + price + "円です。";
+ return message;
+
+
 // function getmassageText(text){
 //   if(text.match(/学校の地図|学校の場所/)) {
 //     return client.replyMessage(event.replyToken, {
 //       type: 'location',
 //       "title": "福島県立小高産業技術高校",
-//       "address": "〒979-2157 福島県南相馬市小高区吉名玉ノ木平７８",
+//         "address": "〒979-2157 福島県南相馬市小高区吉名玉ノ木平７８",
 //       "latitude": 37.5580927,
 //       "longitude": 140.9796601
 //     }
