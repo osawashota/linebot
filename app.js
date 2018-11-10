@@ -81,7 +81,7 @@ function getMessageText(text) {
 // var price = 0;
 // if(text.match(/カット/)){
 //   price += 1000;
-// }
+// }h
 // if(text.match(/パーマ/)){
 //   price += 2000;
 // }
