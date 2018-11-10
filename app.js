@@ -60,14 +60,18 @@ function getMessageText(text) {
   }else if(text.match(/カット|パーマ｜カラー/)) {
     // return message;
 
-    var price = 0;
+    var mensPrice = 0;
+    var womansPrice = 0+
     if(text.match(/カット/)){
-      price += 1000;
+      mensPrice += 1000;
+      womensPrise += 1000;
     }
     if(text.match(/パーマ/)){
-      price += 2000;
+      mensPrice += 2000;
+      womensPrise += 2500;
     }
-    message = "価格は" + price + "円です。";
+    message = "男性の価格は" + mensPric + "円です。";
+    message +="\n女性の価格は" + womensPrise + "円です。"
     return message;
   } else {
     message = '?????????????';
