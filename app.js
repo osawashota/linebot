@@ -70,7 +70,7 @@ function getMessageText(text) {
       mensPrice += 2000;
       womensPrise += 2500;
     }
-    message = "男性の価格は" + mensPric + "円です。";
+    message = "男性の価格は" + mensPrice + "円です。";
     message +="\n女性の価格は" + womensPrise + "円です。"
     return message;
   } else {
