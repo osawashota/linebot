@@ -64,11 +64,11 @@ function getMessageText(text) {
     var womensPrice = 0;
     if(text.match(/カット/)){
       mensPrice += 1000;
-      womensPrise += 1000;
+      womensPrice += 1000;
     }
     if(text.match(/パーマ/)){
       mensPrice += 2000;
-      womensPrise += 2500;
+      womensPrice += 2500;
     }
     message = "男性の価格は" + mensPrice + "円です。";
     message +="\n女性の価格は" + womensPrise + "円です。";
