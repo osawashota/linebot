@@ -57,8 +57,8 @@ function getMessageText(text) {
     message = '8:00 ~ 19:00';
   }else if(text.match(/定休日/)){
     message = '毎月第二月曜日と第三月曜日';
-
-    return message;
+  }else if(text.match(/カット|パーマ｜カラー/)) {
+    // return message;
 
     var price = 0;
     if(text.match(/カット/)){
@@ -69,7 +69,6 @@ function getMessageText(text) {
     }
     message = "価格は" + price + "円です。";
     return message;
-
   } else {
     message = '?????????????';
   }
