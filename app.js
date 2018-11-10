@@ -70,6 +70,10 @@ function getMessageText(text) {
       mensPrice += 2000;
       womensPrice += 2500;
     }
+    if(text.match(/カラー/)){
+      mensPrice += 1000;
+      womensPrice += 1500;
+    }
     message = "男性の価格は" + mensPrice + "円です。";
     message +="\n女性の価格は" + womensPrice + "円です。";
     return message;
