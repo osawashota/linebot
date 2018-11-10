@@ -60,17 +60,17 @@ function getMessageText(text) {
   } else {
     message = '?????????????';
   }
-//  return message;
+  return message;
 
- var price = 0;
- if(text.match(/カット/)){
-   price += 1000;
- }
- if(text.match(/パーマ/)){
-   price += 2000;
- }
- message = "価格は" + price + "円です。";
- return message;
+  var price = 0;
+  if(text.match(/カット/)){
+    price += 1000;
+  }
+  if(text.match(/パーマ/)){
+    price += 2000;
+  }
+  message = "価格は" + price + "円です。";
+  return message;
 
 
 // function getmassageText(text){
